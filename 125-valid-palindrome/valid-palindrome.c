@@ -23,6 +23,7 @@ void remove_non_alphanumeric(char *str) {
     str[j] = '\0'; 
 }
 bool isPalindrome(char* s) {
+     if(!s)  return true;
     remove_non_alphanumeric(s);
     to_lowercase(s);
     int len = strlen(s);
